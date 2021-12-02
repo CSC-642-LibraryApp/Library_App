@@ -4,17 +4,27 @@ import 'package:flutter/material.dart';
 import 'package:library_app/login.dart';
 import 'package:library_app/signup.dart';
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: HomePage(),
-  ));
-}
-
-class HomePage extends StatelessWidget {
+class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      resizeToAvoidBottomInset: true,
+      //backgroundColor: Colors.white,
+      appBar: AppBar(
+        elevation: 0,
+        brightness: Brightness.light,
+        backgroundColor: Color(0xFF082242),
+        leading: IconButton(
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          icon: Icon(
+            Icons.arrow_back_ios,
+            size: 20,
+            color: Colors.black,
+          ),
+        ),
+      ),
       backgroundColor: Color(0xFF082242),
       body: SafeArea(
         child: Container(
@@ -44,6 +54,7 @@ class HomePage extends StatelessWidget {
                     image: DecorationImage(
                         image: AssetImage("assets/welcome.png"))),
               ),
+              //username
               Padding(
                 //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
                 padding: EdgeInsets.symmetric(horizontal: 15),
@@ -54,8 +65,35 @@ class HomePage extends StatelessWidget {
                       fillColor: Colors.blue[50],
                       filled: true,
                       border: OutlineInputBorder(),
-                      labelText: 'Email',
-                      hintText: '...@gmail.com'),
+                      labelText: 'Username'),
+                ),
+              ),
+              //password
+              Padding(
+                //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
+                padding: EdgeInsets.symmetric(horizontal: 15),
+
+                child: TextField(
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  decoration: InputDecoration(
+                      fillColor: Colors.blue[50],
+                      filled: true,
+                      border: OutlineInputBorder(),
+                      labelText: 'Password'),
+                ),
+              ),
+              //confirm password
+              Padding(
+                //padding: const EdgeInsets.only(left:15.0,right: 15.0,top:0,bottom: 0),
+                padding: EdgeInsets.symmetric(horizontal: 15),
+
+                child: TextField(
+                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  decoration: InputDecoration(
+                      fillColor: Colors.blue[50],
+                      filled: true,
+                      border: OutlineInputBorder(),
+                      labelText: 'Confirm Password'),
                 ),
               ),
               Padding(
@@ -68,56 +106,25 @@ class HomePage extends StatelessWidget {
                   //style: TextStyle(color: Colors.white),
                   style: TextStyle(color: Colors.white, fontSize: 15),
                   decoration: InputDecoration(
-                      fillColor: Colors.blue[50],
-                      filled: true,
-                      border: OutlineInputBorder(),
-                      labelText: 'Password',
-                      hintText: 'Minimum 8 Character'),
+                    fillColor: Colors.blue[50],
+                    filled: true,
+                    border: OutlineInputBorder(),
+                    labelText: 'Email',
+                  ),
                 ),
               ),
               Column(
                 children: <Widget>[
-                  // the login button
-                  MaterialButton(
-                    minWidth: 250,
-                    height: 60,
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
-                      //Navigator.push(context,
-                      //MaterialPageRoute(builder: (context) => LoginPage()));
-                    },
-                    // defining the shape
-                    color: Colors.white,
-                    shape: RoundedRectangleBorder(
-                        side: BorderSide(color: Colors.black),
-                        borderRadius: BorderRadius.circular(20)),
-                    child: Text(
-                      "Login",
-                      style: TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18,
-                        color: Colors.black,
-                        backgroundColor: Colors.white,
-                      ),
-                    ),
-                  ),
-                  SizedBox(height: 30),
-                  Text(
-                    "Don't have account?",
-                    style: TextStyle(
-                      fontSize: 18,
-                      color: Colors.white,
-                    ),
-                  ),
                   // creating the signup button
                   SizedBox(height: 10),
                   MaterialButton(
                     minWidth: 250,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignupPage()));
                     },
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
