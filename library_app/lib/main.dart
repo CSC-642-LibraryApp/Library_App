@@ -15,7 +15,8 @@ class MyApp extends StatelessWidget {
       title: 'Library App',
       theme: ThemeData(
         // This is the theme of your application.
-        primaryColor: const Color(0xFF112D4E),
+        primaryColor: Colors.amber,
+        fontFamily: 'Lora',
       ),
       home: const MyHomePage(title: 'Library Lookup'),
     );
@@ -30,14 +31,6 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
-
-  void _incrementCounter() {
-    setState(() {
-      _counter++;
-    });
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
