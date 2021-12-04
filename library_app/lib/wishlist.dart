@@ -29,7 +29,7 @@ class wishListPageState extends State<wishListPage> {
         drawer: Drawer(),
         appBar: AppBar(),
         body: Container(
-            child: Column(
+          child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
             Padding(

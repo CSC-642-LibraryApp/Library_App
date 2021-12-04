@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:library_app/accountinfo.dart';
 import 'package:library_app/login.dart';
 import 'package:library_app/signup.dart';
 import 'package:library_app/wishlist.dart';
@@ -8,7 +9,7 @@ import 'package:library_app/wishlist.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: wishListPage(),
+    home: accountInfoPage(),
   ));
 }
 
