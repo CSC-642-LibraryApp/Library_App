@@ -3,7 +3,7 @@ import 'package:app642/settings.dart';
 import 'package:flutter/material.dart';
 import 'main.dart';
 import 'book.dart';
-import 'home2.dart';
+//import 'home2.dart';
 import 'home.dart';
 import 'settings.dart';
 import 'wishlist.dart';

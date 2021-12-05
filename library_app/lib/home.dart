@@ -63,7 +63,7 @@ class _AnimatedSearchBarState extends State<AnimatedSearchBar> {
             libPopUp(context);
           }, // handle your image tap here
           child: Image.asset(
-            'assets/applemap.jpg',
+            'assets/applemap.JPG',
             fit: BoxFit.cover,
             alignment: Alignment.center,
           ),

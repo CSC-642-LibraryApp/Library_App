@@ -48,7 +48,7 @@ class LoginPage extends StatelessWidget {
               Container(
                 height: 200,
                 child: Image.asset(
-                  'assets/welcome.jpg',
+                  'assets/welcome.png',
                 ),
 
                 //   decoration: BoxDecoration(

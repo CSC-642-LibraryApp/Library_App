@@ -56,7 +56,7 @@ class signuplogin extends StatelessWidget {
               Container(
                 height: 150,
                 child: Image.asset(
-                  'assets/welcome.jpg',
+                  'assets/welcome.png',
                 ),
               ),
               Padding(
