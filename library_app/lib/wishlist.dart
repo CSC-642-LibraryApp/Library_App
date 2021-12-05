@@ -34,7 +34,7 @@ class wishListPageState extends State<wishListPage> {
           children: [
             Padding(
               padding: const EdgeInsets.only(top: 10, bottom: 10),
-              child: Text('Wishlist books: ',
+              child: Text('Wishlist books',
                   textAlign: TextAlign.center,
                   style: TextStyle(
                       color: Colors.black,

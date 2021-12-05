@@ -9,7 +9,7 @@ import 'package:library_app/wishlist.dart';
 void main() {
   runApp(MaterialApp(
     debugShowCheckedModeBanner: false,
-    home: accountInfoPage(),
+    home: wishListPage(),
   ));
 }
 

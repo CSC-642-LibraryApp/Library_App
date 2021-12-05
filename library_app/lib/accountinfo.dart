@@ -14,10 +14,6 @@ class Books {
 
 class accountInfoPage extends StatelessWidget {
   @override
-  List<Books> books = [
-    Books(name: "Book 1", author: "Author 1"),
-    Books(name: "Book 2", author: "Author 2"),
-  ];
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +22,16 @@ class accountInfoPage extends StatelessWidget {
         body: Container(
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+            children: [
+            Padding(
+              padding: const EdgeInsets.only(top: 10, bottom: 10, left: 123),
+              child: Text('Account Info',
+                  textAlign: TextAlign.center,
+                  style: TextStyle(
+                      color: Colors.black,
+                      fontSize: 24,
+                      fontWeight: FontWeight.bold)),
+            ),
               Row(
                 children: <Widget>[
                   Padding(
@@ -52,7 +57,7 @@ class accountInfoPage extends StatelessWidget {
                 ],
               ),
               Padding(
-                  padding: const EdgeInsets.only(top: 15, left: 15),
+                  padding: const EdgeInsets.only(top: 15, left: 10),
                   child: Text('Description:',
                       style: TextStyle(
                           color: Colors.black,
@@ -61,7 +66,7 @@ class accountInfoPage extends StatelessWidget {
               Padding(
                   padding: const EdgeInsets.only(top: 15, left: 10),
                   child: Text(
-                      ' I am a massive fan of horror themed books, nice to meet all of you!',
+                      'I am a massive fan of horror themed books, nice to meet all of you!',
                       style: TextStyle(color: Colors.black, fontSize: 18))),
             ],
           ),
