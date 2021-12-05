@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'home2.dart';
+//import 'home2.dart';
 import 'home.dart';
 import 'nav.dart';
 //Allison

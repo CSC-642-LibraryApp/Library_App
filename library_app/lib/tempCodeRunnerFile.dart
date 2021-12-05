@@ -1,6 +1,9 @@
+
 import 'dart:ui';
+
 import 'package:flutter/material.dart';
-import 'signup.dart';
+import 'package:library_app/login.dart';
+import 'package:library_app/signup.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -10,6 +13,7 @@ class LoginPage extends StatelessWidget {
       //backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
+        brightness: Brightness.light,
         backgroundColor: Color(0xFF082242),
         leading: IconButton(
           onPressed: () {
@@ -18,7 +22,7 @@ class LoginPage extends StatelessWidget {
           icon: Icon(
             Icons.arrow_back_ios,
             size: 20,
-            color: Colors.white,
+            color: Colors.black,
           ),
         ),
       ),
@@ -46,14 +50,10 @@ class LoginPage extends StatelessWidget {
                 ],
               ),
               Container(
-                height: 200,
-                child: Image.asset(
-                  'assets/welcome.png',
-                ),
-
-                //   decoration: BoxDecoration(
-                //       image: DecorationImage(
-                //           image: AssetImage("assets/welcome.jpg"))),
+                height: 150,
+                decoration: BoxDecoration(
+                    image: DecorationImage(
+                        image: AssetImage("assets/welcome.png"))),
               ),
               //username
               Padding(
@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
                       filled: true,
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
                       filled: true,
@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
                       filled: true,
@@ -105,7 +105,7 @@ class LoginPage extends StatelessWidget {
                 child: TextField(
                   obscureText: true,
                   //style: TextStyle(color: Colors.white),
-                  style: TextStyle(color: Colors.black, fontSize: 15),
+                  style: TextStyle(color: Colors.white, fontSize: 15),
                   decoration: InputDecoration(
                     fillColor: Colors.blue[50],
                     filled: true,

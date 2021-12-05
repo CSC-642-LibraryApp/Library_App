@@ -79,6 +79,7 @@ class SignupPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
+                  obscureText: true,
                   style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
@@ -93,6 +94,7 @@ class SignupPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
+                  obscureText: true,
                   style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
@@ -107,7 +109,6 @@ class SignupPage extends StatelessWidget {
                 //padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  obscureText: true,
                   //style: TextStyle(color: Colors.white),
                   style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
