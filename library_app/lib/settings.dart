@@ -1,4 +1,7 @@
+import 'package:app642/login.dart';
+import 'package:app642/enrollmain.dart';
 import 'package:flutter/material.dart';
+import 'login.dart';
 //Minseon
 
 class setting extends StatelessWidget {
@@ -29,7 +32,30 @@ class setting extends StatelessWidget {
           //   ],
           // ),
           Container(
-            child: _buildButtonColumn("Account Information"),
+            width: 280,
+            child: ElevatedButton(
+              onPressed: () {
+                Navigator.of(context).push(PageRouteBuilder(
+                    opaque: false,
+                    pageBuilder: (BuildContext context, _, __) =>
+                        signuplogin()));
+              },
+              style: ElevatedButton.styleFrom(
+                onPrimary: Colors.black,
+                primary: Color(0xFFD3E2F7),
+                shape: RoundedRectangleBorder(
+                  borderRadius: BorderRadius.circular(5),
+                ),
+                elevation: 3.0,
+              ),
+              child: Padding(
+                padding: const EdgeInsets.all(25.0),
+                child: Text(
+                  'Account Info',
+                  style: TextStyle(fontSize: 20),
+                ),
+              ),
+            ),
           ),
           Container(
             child: _buildButtonColumn(" Books Checked out "),
