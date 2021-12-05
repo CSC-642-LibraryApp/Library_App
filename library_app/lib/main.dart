@@ -3,9 +3,6 @@ import 'home2.dart';
 import 'nav.dart';
 //Allison
 
-// Uncomment lines 7 and 10 to view the visual layout at runtime.
-// import 'package:flutter/rendering.dart' show debugPaintSizeEnabled;
-
 void main() {
   // debugPaintSizeEnabled = true;
   runApp(const MyApp());
