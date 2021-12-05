@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:app642/login.dart';
 import 'package:flutter/material.dart';
 //import 'package:login_signup_screen/signup.dart';
 
@@ -11,7 +12,6 @@ class SignupPage extends StatelessWidget {
       //backgroundColor: Colors.white,
       appBar: AppBar(
         elevation: 0,
-        brightness: Brightness.light,
         backgroundColor: Color(0xFF082242),
         leading: IconButton(
           onPressed: () {
@@ -126,10 +126,11 @@ class SignupPage extends StatelessWidget {
                     minWidth: 250,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => SignupPage()));
+                      Navigator.pop(context);
+                      // Navigator.push(
+                      //     context,
+                      //     MaterialPageRoute(
+                      //         builder: (context) => LoginPage()));
                     },
                     color: Colors.white,
                     shape: RoundedRectangleBorder(

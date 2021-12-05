@@ -132,8 +132,10 @@ class signuplogin extends StatelessWidget {
                     minWidth: 250,
                     height: 60,
                     onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => LoginPage()));
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                              builder: (context) => SignupPage()));
                     },
                     color: Colors.white,
                     shape: RoundedRectangleBorder(
