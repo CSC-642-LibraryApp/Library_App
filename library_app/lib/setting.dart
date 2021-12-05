@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'reviews.dart';
+
 class setting extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -8,7 +10,7 @@ class setting extends StatelessWidget {
           backgroundColor: Color(0xFF112D4E),
       ),
       body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget> [
           const Text(
@@ -17,9 +19,13 @@ class setting extends StatelessWidget {
                               color: Color(0xFF112D4E),
                               fontSize: 28),
               ),
-          _buildButtonColumn("Account Information"),
-          _buildButtonColumn(" Books Checked out "),
-          _buildButtonColumn("      Your  reviews      "),
+          Column(
+            children: <Widget>[
+              _buildButtonColumn("Account Information"),
+              _buildButtonColumn(" Books Checked out "),
+              _buildButtonColumn("      Your  reviews      "),
+            ],
+          ),
           Container(height: 5,),
           const Text("Community",
             style: TextStyle(fontWeight: FontWeight.bold,
@@ -36,13 +42,13 @@ class setting extends StatelessWidget {
       ),
     );
   }
-  Column _buildButtonColumn(String text) {
+  Column _buildButtonColumn(String text, ) {
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         ElevatedButton(
-          onPressed: () {},
+          onPressed: (){},
           style: ElevatedButton.styleFrom(
             onPrimary: Colors.black,
             primary: Colors.white70,
