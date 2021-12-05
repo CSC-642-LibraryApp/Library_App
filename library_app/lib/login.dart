@@ -61,7 +61,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
                       filled: true,
@@ -75,7 +75,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
                       filled: true,
@@ -89,7 +89,7 @@ class LoginPage extends StatelessWidget {
                 padding: EdgeInsets.symmetric(horizontal: 15),
 
                 child: TextField(
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
                       fillColor: Colors.blue[50],
                       filled: true,
@@ -105,7 +105,7 @@ class LoginPage extends StatelessWidget {
                 child: TextField(
                   obscureText: true,
                   //style: TextStyle(color: Colors.white),
-                  style: TextStyle(color: Colors.white, fontSize: 15),
+                  style: TextStyle(color: Colors.black, fontSize: 15),
                   decoration: InputDecoration(
                     fillColor: Colors.blue[50],
                     filled: true,
