@@ -23,7 +23,34 @@ class setting extends StatelessWidget {
             children: <Widget>[
               _buildButtonColumn("Account Information"),
               _buildButtonColumn(" Books Checked out "),
-              _buildButtonColumn("      Your  reviews      "),
+              // _buildButtonColumn("      Your  reviews      "),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  ElevatedButton(
+                    onPressed: (){
+                      Navigator.push(
+                          context, MaterialPageRoute(builder: (_) => reviews()));
+                    },
+                    style: ElevatedButton.styleFrom(
+                      onPrimary: Colors.black,
+                      primary: Colors.white70,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+                      elevation: 3.0,
+                    ),
+                    child: Padding(
+                      padding: const EdgeInsets.all(25.0),
+                      child: Text(
+                        "      Your  reviews      ",
+                        style: TextStyle(fontSize: 20),
+                      ),
+                    ),
+                  ),
+                ],
+              )
             ],
           ),
           Container(height: 5,),
@@ -42,13 +69,14 @@ class setting extends StatelessWidget {
       ),
     );
   }
-  Column _buildButtonColumn(String text, ) {
+  Column _buildButtonColumn(String text) {
     return Column(
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
       children: <Widget>[
         ElevatedButton(
-          onPressed: (){},
+          onPressed: (){
+          },
           style: ElevatedButton.styleFrom(
             onPrimary: Colors.black,
             primary: Colors.white70,
